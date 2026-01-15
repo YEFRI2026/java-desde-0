@@ -1,0 +1,146 @@
+metodos mas usados 
+| Método         | ¿Qué lee?      |
+| -------------- | -------------- |
+| `nextLine()`   | Texto completo |
+| `next()`       | Una palabra    |
+| `nextInt()`    | Número entero  |
+| `nextDouble()` | Número decimal |
+Scanner permite leer datos del teclado
+Facilita la interacción con el usuario
+Muy usado en programas básicos de Java.
+
+
+objeto: copia de una clase que tiene atributos y metodos. repesenta algo del mudo real
+metodo:es una accion que puede haver el objeto, es como un vervo; comer(), correr(), saluda(). 
+| Concepto               | Qué hace                                          |
+| ---------------------- | ------------------------------------------------- |
+| **Clase `Persona`**    | Plantilla de un objeto                            |
+| **Objeto `p`**         | Una persona concreta con nombre “Juan”            |
+| **Método `saludar()`** | Acción que el objeto puede hacer (imprime saludo) |
+
+atributos: 
+| Atributo | Tipo   | Qué representa          |
+| -------- | ------ | ----------------------- |
+| `nombre` | String | El nombre de la persona |
+| `edad`   | int    | La edad de la persona   |
+
+
++------------------+
+|      Persona     |  <- Nombre de la clase
++------------------+
+| - nombre : String|
+| - edad   : int   |  <- Atributos (características)
++------------------+
+| + saludar()      |  <- Método (acción que puede hacer el objeto)
++------------------+
+
+Explicación del diagrama
+Clase: Persona → plantilla para crear objetos
+Atributos:
+nombre → tipo String → guarda el nombre de la persona
+edad → tipo int → guarda la edad de la persona
+Métodos:
+saludar() → imprime un mensaje usando el atributo nombre
+
+De manera similar, un objeto tiene atributos que lleva consigo a medida que se utiliza en un programa. 
+Estos atributos se especifican como parte del objeto de esa clase. Por ejemplo, un objeto cuenta bancaria
+tiene un atributo saldo que representa la cantidad de dinero en la cuenta. Cada objeto cuenta bancaria co
+noce el saldo de la cuenta que representa, pero no los saldos de las otras cuentas en el banco. Los atributos
+se especifican mediante las variables de instancia de la clase.
+
+
+herencia: diagrama de erencia 
+       +------------------+
+       |      Persona     |   <- Superclase
+       +------------------+
+       | - nombre : String|
+       | - edad   : int   |   <- Atributos heredados
+       +------------------+
+       | + saludar()      |   <- Método heredado
+       +------------------+
+               ▲
+               │
+               │ hereda
+               │
+       +------------------+
+       |     Estudiante   |   <- Subclase
+       +------------------+
+       | - matricula : String |  <- Atributo propio
+       +------------------+
+       | + mostrarDatos()    |  <- Método propio
+       +------------------+
+
+
+como programar y donde 
+En el sitio Web del libro en
+www.deitel.com/books/jhtp10
+proporcionamos videos Dive-Into® que le muestran cómo ejecutar las aplicaciones de Java de este libro y 
+cómo desarrollar nuevas aplicaciones de Java con Eclipse, NetBeans e IntelliJ IDEA.
+
+Compilación de un programa en Java para convertirlo en códigos de bytes:
+Por lo general los IDE proveen un elemento de menú, como Build (Generar) o Make (Crear), que invoca el comando javac por usted. 
+Si el compilador detecta errores, tendrá que ir a la fase 1 y corregirlos.
+javac Bienvenido.java
+
+Por ejemplo, para ejecutar una aplicación en Java llamada Bienvenido, 
+debe escribir el comando
+java Bienvenido
+
+como mostrar varias lineas de texto con una sola instruccion
+ejercicio de bajo
+
+// Fig. 2.4: Bienvenido3.java
+  // Imprimir varias líneas de texto con una sola instrucción.
+ 
+  public class Bienvenido3  
+ {
+// el método main empieza la ejecución de la aplicación en Java
+public static void main(String[] args)
+   {
+      System.out.println(“Bienvenido\na\nla programacion\nen Java!”);
+  }// fin del método main
+}// fin de la clase Bienvenido3
+
+Imprimir varias líneas de texto con una sola instrucción
+System.out.println(“Bienvenido\na\nla programacion\nen Java!”);
+
+
+\n Nueva línea. Coloca el cursor de la pantalla al inicio de la siguiente línea. e
+\t Tabulador horizontal. Desplaza el cursor de la pantalla hasta la siguiente posición 
+de tabulación.
+\r Retorno de carro. Coloca el cursor de la pantalla al inicio de la línea actual;ll no avanza a la 
+siguiente línea. Cualquier carácter que se imprima después del retorno de carro sobrescribe
+los caracteres previamente impresos en esa línea.
+\\ Barra diagonal inversa. Se usa para imprimir un carácter de barra diagonal inversa.
+\”Doble comilla. Se usa para imprimir un carácter de doble comilla. Por ejemplo,
+   System.out.println(“\”entre comillas\””);
+muestra “entre comillas”.
+
+.El método System.out.printf (“f” significa “formato”) muestra datoscon formato. La figura 2.6 usa este 
+método para mostrar en dos líneas las cadenas “Bienvenido a” y “la programacion en Java!”.
+
+System.out.printf(“%s%n%s%n”,
+“Bienvenido a”, “la programacion en Java!”);
+--El primer argumento del método printf es una cadena de formato que puede consistir en texto fijo
+y especificadores de formato. 
+
+| Secuencia | Significado                    |
+| --------- | ------------------------------ |
+| `\n`      | Nueva línea                    |
+| `\t`      | Tabulación                     |
+| `\r`      | Regresar al inicio de la línea |
+| `\\`      | Barra invertida                |
+| `\"`      | Comillas dobles                |
+
+.es una cadena con especificadores de formato, muy común en
+lenguajes como C, Java y otros.
+| Símbolo | Significado              |
+| ------- | ------------------------ |
+| `%d`    | Muestra un número entero |
+| `%n`    | Salto de línea           |
+| `%n`    | Salto de línea           |
+
+comandos de github para cargar archivos
+git add .
+git commit -m"ejercicios de java resuaeltos"
+git push origin main
