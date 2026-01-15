@@ -1,0 +1,66 @@
+
+
+ejercicio 1
+
+public class Bienvenido1 {
+
+public static void main(String[] args){
+   }
+      System.out.println(“Bienvenido a la programacion: ”);
+}
+    (Bienvenido a la programacion en Java!)
+
+ejercicio 2
+
+ public class Bienvenido3  
+ {
+// el método main empieza la ejecución de la aplicación en Java
+public static void main(String[] args)
+ {
+System.out.println(“Bienvenido\na\nla programacion\nen Java!”);
+ }// fin del método main
+}// fin de la clase Bienvenido3
+
+
+ejercicio 3
+
+ public class Bienvenido4 
+{
+// el método main empieza la ejecución de la aplicación de Java
+public static void main(String[] args)
+{
+System.out.printf(“%s%n%s%n”,
+“Bienvenido a”, “la programacion en Java!”); 
+} // fin del método main
+} // fin de la clase Bienvenido4
+
+
+ejercicio 4
+
+ import java.util.Scanner;
+ public class Suma
+ {
+ public static void main(String[] args)
+     {
+       Scanner entrada = new Scanner(System.in);
+
+ intnumero1;
+ intnumero2;
+ intsuma;
+
+       System.out.print( 7 “Escriba el primer entero: ”);
+       numero1 = entrada.nextInt();
+
+       System.out.print(“Escriba el segundo entero: ”);
+       numero2 = entrada.nextInt();
+
+       suma = numero1 + numero2;
+
+      System.out.printf(“La suma es %d%n”, suma);
+   }
+ } 
+
+
+
+
+
